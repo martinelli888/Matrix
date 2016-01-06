@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/texto017"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto017"
+        android:paddingTop="15dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+
+    <RadioGroup
+        android:id="@+id/grupoDuplicada"
+        android:layout_toEndOf="@id/texto017"
+        android:layout_alignTop="@+id/texto017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio17a"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto017a"
+            android:checked="false"
+            android:paddingEnd="15dp"
+            android:layout_alignEnd="@id/grupoDuplicada"/>
+
+        <RadioButton
+            android:id="@+id/radio17b"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto017b"
+            android:checked="true"
+            android:paddingEnd="15dp"
+            android:layout_alignEnd="@id/grupoDuplicada"/>
+    </RadioGroup>
+
+//pista
+    <TextView
+        android:id="@+id/texto018"
+        android:layout_below="@id/grupoDuplicada"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto018"
+        android:paddingTop="8dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+
+    <RadioGroup
+        android:id="@+id/grupoPista"
+        android:layoutDirection="ltr"
+        android:layout_toEndOf="@id/texto017"
+        android:layout_alignTop="@+id/texto018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio18a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto018a"
+            android:checked="false"
+            android:layout_marginLeft="0dp"
+            android:layout_alignBaseline="@id/grupoPista"
+            android:paddingEnd="0dp"/>
+        <RadioButton
+            android:id="@+id/radio18b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto018b"
+            android:checked="true"
+            android:layout_alignBaseline="@id/radio18a"
+            android:layout_marginLeft="15dp"
+            android:paddingEnd="10dp"/>
+    </RadioGroup>
+
+    //sentido
+    <TextView
+        android:id="@+id/texto019"
+        android:layout_below="@id/texto018"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto019"
+        android:paddingTop="8dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+    <RadioGroup
+        android:id="@+id/grupoSentido"
+        android:layout_toEndOf="@id/texto017"
+        android:layout_alignTop="@+id/texto019"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio19a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto019a"
+            android:checked="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignBaseline="@id/texto019"
+            android:paddingEnd="10dp"/>
+        <RadioButton
+            android:id="@+id/radio19b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto019b"
+            android:checked="false"
+            android:layout_toEndOf="@+id/grupoDuplicada"
+            android:layout_alignBaseline="@id/radio19a"
+            android:layout_marginLeft="35dp"
+            android:paddingEnd="20dp"/>
+    </RadioGroup>
+//faixa
+    <TextView
+        android:id="@+id/texto027"
+        android:layout_below="@id/texto019"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto027"
+        android:paddingTop="10dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+
+    <RadioGroup
+        android:id="@+id/grupoFaixa"
+        android:layout_below="@+id/texto027"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio23"
+            android:layout_marginLeft="18dp"
+            android:layout_below="@id/texto027"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/texto023"
+            android:checked="false"
+            android:paddingLeft="3dp"
+            android:paddingEnd="5dp"/>
+        <RadioButton
+            android:id="@+id/radio24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto024"
+            android:textSize="12dp"
+            android:checked="true"
+            android:layout_toEndOf="@+id/radio23"
+            android:layout_alignBaseline="@id/radio23"
+            android:layout_marginLeft="5dp"
+            android:paddingEnd="3dp"/>
+        <RadioButton
+            android:id="@+id/radio25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto025"
+            android:textSize="12dp"
+            android:checked="false"
+            android:layout_toEndOf="@+id/radio24"
+            android:layout_alignBaseline="@id/radio24"
+            android:layout_marginLeft="5dp"
+            android:paddingEnd="3dp"/>
+        <RadioButton
+            android:id="@+id/radio26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto026"
+            android:textSize="12dp"
+            android:checked="false"
+            android:layout_toEndOf="@+id/radio25"
+            android:layout_alignBaseline="@id/radio25"
+            android:layout_marginLeft="5dp"
+            android:paddingEnd="3dp"/>
+    </RadioGroup>
+
+//km inicial
+    <TextView
+        android:id="@+id/texto020"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/texto027"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto020"
+        android:paddingTop="38dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+    <EditText
+        android:id="@+id/DigitaKMI"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/texto027"
+        android:layout_alignBaseline="@id/texto020"
+        android:inputType="numberDecimal"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:textAlignment="gravity"
+        android:maxLength="3"/>
+    <TextView
+        android:id="@+id/mais3"
+        android:layout_toEndOf="@id/DigitaKMI"
+        android:layout_alignBaseline="@id/texto020"
+        android:layout_below="@id/texto027"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="+"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"/>
+    <EditText
+        android:id="@+id/DigitaESI"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto027"
+        android:layout_alignBaseline="@id/mais3"
+        android:layout_toEndOf="@id/mais3"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="6dp"
+        android:textAlignment="gravity"
+        android:maxLength="3" />
+//km final
+    <TextView
+        android:id="@+id/texto021"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/texto020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto021"
+        android:paddingTop="12dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"/>
+    <EditText
+        android:id="@+id/DigitaKMF"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto021"
+        android:layout_alignBaseline="@id/texto021"
+        android:layout_marginLeft="130dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:textAlignment="gravity"
+        android:maxLength="3" />
+    <TextView
+        android:id="@+id/mais4"
+        android:layout_toEndOf="@id/DigitaKMF"
+        android:layout_below="@id/texto020"
+        android:layout_alignBaseline="@id/texto021"
+        android:layout_marginTop="@dimen/espacoEntreLinhas"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="+"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"/>
+    <EditText
+        android:id="@+id/DigitaESF"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto021"
+        android:layout_alignBaseline="@id/mais4"
+        android:layout_toEndOf="@id/mais4"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="6dp"
+        android:textAlignment="gravity"
+        android:maxLength="3"/>
+//comprimnto
+    <TextView
+        android:id="@+id/texto121"
+        android:layout_below="@id/texto027"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto033"
+        android:paddingTop="50dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"
+        android:paddingLeft="18dp"/>
+    <EditText
+        android:id="@+id/DigitaComp001"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto121"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBaseline="@id/texto121"
+        android:layout_toEndOf="@id/texto121"
+        android:inputType="numberDecimal"
+        android:hint="metros"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="@dimen/bordaMinima"
+        android:textAlignment="gravity"
+        android:maxLength="5"
+        />
+//largura
+    <TextView
+        android:id="@+id/texto122"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/texto034"
+        android:paddingTop="10dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"
+        android:layout_below="@id/texto121"/>
+    <EditText
+        android:id="@+id/DigitaLarg001"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto122"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBaseline="@id/texto122"
+        android:layout_toEndOf="@id/texto121"
+        android:hint="metros"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="@dimen/bordaMinima"
+        android:textAlignment="gravity"
+        android:inputType="numberDecimal"
+        android:maxLength="5"/>
+//espessura
+    <TextView
+        android:id="@+id/texto123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto035"
+        android:paddingTop="10dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"
+        android:layout_below="@id/texto122"
+        />
+    <EditText
+        android:id="@+id/DigitaEsp001"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto123"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBaseline="@id/texto123"
+        android:layout_toEndOf="@id/texto121"
+        android:hint="0.05 (m)"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="@dimen/bordaMinima"
+        android:textAlignment="gravity"
+        android:inputType="numberDecimal"/>
+//densidade
+    <TextView
+        android:id="@+id/texto130"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto030"
+        android:paddingTop="10dp"
+        android:paddingLeft="18dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/alturaDoTexto1"
+        android:textStyle="bold"
+        android:textColor="@color/textos"
+        android:layout_below="@id/texto123"
+        />
+    <EditText
+        android:id="@+id/DigitaDens001"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/texto130"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBaseline="@id/texto130"
+        android:layout_toEndOf="@id/texto121"
+        android:text="2.5"
+        android:textColor="@color/textopreenchido"
+        android:textSize="@dimen/alturaDoTexto2"
+        android:layout_margin="@dimen/bordaMinima"
+        android:textAlignment="gravity"
+        android:inputType="numberDecimal"/>
+
+    <Button
+
+        android:id="@+id/BotaoVoltar"
+        style="@style/botao_ccr"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/texto048"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+     android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/BotaoGerar"
+        style="@style/botao_ccr"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/texto047"
+        android:elevation="@dimen/alturaDoTexto1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:longClickable="false" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

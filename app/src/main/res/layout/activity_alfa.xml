@@ -1,0 +1,1170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                //data
+                <TextView
+                    android:id="@+id/texto003r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto003"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retdata"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto003r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@id/texto003r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //empresa
+                <TextView
+                    android:id="@+id/retempresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto001r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/retempresa"
+                    android:layout_toLeftOf="@id/retempresa"
+                    android:text="@string/texto001"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //conforme
+                <TextView
+                    android:id="@+id/texto049r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto001r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto049"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retconforme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto049r"
+                    android:layout_below="@id/texto001r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto049r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //projeto
+                <TextView
+                    android:id="@+id/retprojeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto049r"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texto001r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto002r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto001r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retprojeto"
+                    android:text="@string/texto002"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //turno
+                <TextView
+                    android:id="@+id/texto004r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto049r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto004"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retturno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto004r"
+                    android:layout_below="@id/texto049r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto004r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //clima
+                <TextView
+                    android:id="@+id/retclima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto004r"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texto049r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto005r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto049r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retclima"
+                    android:text="@string/texto005"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //local
+                //duplicacao
+                <TextView
+                    android:id="@+id/texto017r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto004r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto017"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retduplicacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto017r"
+                    android:layout_below="@id/texto004r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto017r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Sentido
+                <TextView
+                    android:id="@+id/retpista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto017r"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texto005r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto018r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto005r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retpista"
+                    android:text="@string/texto018"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //pista
+                <TextView
+                    android:id="@+id/texto019r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto017r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto019"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retsentido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto019r"
+                    android:layout_below="@id/texto017r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto019r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //faixa
+                <TextView
+                    android:id="@+id/retfaixa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto019r"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texto017r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto053r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto017r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retfaixa"
+                    android:text="@string/texto053"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //KMS
+                <TextView
+                    android:id="@+id/texto020r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto020"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retkmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto020r"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto020r"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mais1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/retkmi"
+                    android:text="+"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mais1"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/mais1"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //KMFS
+                <TextView
+                    android:id="@+id/retesf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto020r"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mais2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retesf"
+                    android:text="+"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/retkmf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto020r"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/mais2"
+                    android:text="@string/vazio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/texto021r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto019r"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toLeftOf="@id/retkmf"
+                    android:text="@string/texto021"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+
+                //resultados
+                <TextView
+                    android:id="@+id/texto054r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto020r"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/alturaDoTexto3"
+                    android:text="@string/texto054"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto3" />
+
+                //comprimento
+                <TextView
+                    android:id="@+id/texto033r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto054r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto033"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraComprimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto033r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto054r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto033r"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Largura
+                <TextView
+                    android:id="@+id/texto034r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto033r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto034"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraLargura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto034r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto033r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto034r"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Espessura
+                <TextView
+                    android:id="@+id/texto035r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto034r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto035"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraEspessura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto035r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto034r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto035r"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //densidade
+                <TextView
+                    android:id="@+id/texto030r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto035r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto030"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraDensidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto030r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto035r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto030r"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //ml
+                <TextView
+                    android:id="@+id/texto031r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto030r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto031"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto031r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto030r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto031r"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //area
+                <TextView
+                    android:id="@+id/texto058r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto031r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto058"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto058r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto031r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto058r"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //volume
+                <TextView
+                    android:id="@+id/texto059r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto058r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto059"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto059r"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto058r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto059r"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Serviços
+                <TextView
+                    android:id="@+id/texto055r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto059r"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/alturaDoTexto3"
+                    android:text="@string/texto055"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto3" />
+
+                //Fresagem
+                <TextView
+                    android:id="@+id/texto010b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto055r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto010b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraFresagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto010b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto055r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //CBUQR2
+                <TextView
+                    android:id="@+id/texto011b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto010b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto011b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraCBUQR1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto011b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto010b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto011b"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //CBUQR1
+                <TextView
+                    android:id="@+id/texto012b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto011b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto012b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraCBUQR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto012b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto011b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto012b"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //PMQ
+                <TextView
+                    android:id="@+id/texto013b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto012b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto013b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraPmq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto013b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto012b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto013b"
+                    android:text="@string/texto043"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Micro-Fresagem
+                <TextView
+                    android:id="@+id/texto009b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto013b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto009b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraMicroFresagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto009b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto013b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto009b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Micro-Revestimento
+                <TextView
+                    android:id="@+id/texto009bb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto009b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto009bb"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraMicroRevestimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto009bb"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto009b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto009bb"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Reciclagem
+                <TextView
+                    android:id="@+id/texto015b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto009bb"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto015b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraReciclagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto015b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto009bb"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto015b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //TSS
+                <TextView
+                    android:id="@+id/texto071"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto015b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto071"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraTSS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto071"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto015b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto015b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Impermeabilizacao
+                <TextView
+                    android:id="@+id/texto072"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto071"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto072"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraImpermeabilizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto072"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto071"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto015b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Drenagem
+                <TextView
+                    android:id="@+id/texto016b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto072"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto016b"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraDrenagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto016b"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto072"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto015b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Sela Trinca
+                <TextView
+                    android:id="@+id/texto073"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto016b"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto073"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraSelaTrinca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto073"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto016b"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+                //Insumos
+                <TextView
+                    android:id="@+id/texto056r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto073"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/alturaDoTexto3"
+                    android:text="@string/texto056"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto3" />
+
+                //CAP Pista
+                <TextView
+                    android:id="@+id/texto074"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto056r"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto074"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraCapPista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto074"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto055r"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //CAP Acostamento
+                <TextView
+                    android:id="@+id/texto075"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto074"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto075"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraCAPAcostamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto075"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto074"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Emulpen
+                <TextView
+                    android:id="@+id/texto076"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto075"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto076"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraEmulpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto076"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto075"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //RR2C
+                <TextView
+                    android:id="@+id/texto077"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto076"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto077"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraRR2C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto077"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto076"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //RC1CE
+                <TextView
+                    android:id="@+id/texto078"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto077"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto078"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraRC1CE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto078"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto077"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Selador de Trinca
+                <TextView
+                    android:id="@+id/texto079"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto078"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto079"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraSelador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto079"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto078"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                //Cimento
+                <TextView
+                    android:id="@+id/texto080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto079"
+                    android:layout_marginLeft="@dimen/bordaRelatorio"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:text="@string/texto080"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textopreenchido"
+                    android:textSize="@dimen/alturaDoTexto2" />
+                <TextView
+                    android:id="@+id/mostraCimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/texto080"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/texto079"
+                    android:layout_marginLeft="@dimen/bordaMaxima"
+                    android:layout_marginTop="@dimen/espacoEntreLinhas"
+                    android:layout_toEndOf="@id/texto010b"
+                    android:text="@string/texto057"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textos"
+                    android:textSize="@dimen/alturaDoTexto1"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BotaoVoltar3"
+                    android:layout_below="@id/texto080"
+                    style="@style/botao_ccr"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto048"
+                    android:layout_marginLeft="31dp"
+                    android:layout_alignParentLeft="true"/>
+                <Button
+                    android:id="@+id/BotaoSalvar3"
+                    style="@style/botao_ccr"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texto080"
+                    android:layout_marginRight="31dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/texto047a"
+                    android:elevation="@dimen/alturaDoTexto1"
+                    android:longClickable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+//botoes
+
+    //logo e creditos
+
+    <TextView
+        android:id="@+id/texto099"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/alturaDoTexto3"
+        android:text="Cleber Martinelli - MSVIA -  2015"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textopreenchido"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>

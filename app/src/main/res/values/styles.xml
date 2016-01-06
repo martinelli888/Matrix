@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:colorPrimaryDark">@color/textos</item>-->
+        <item name="colorPrimary">@color/textos</item>
+        <item name="android:textColorPrimary">@color/textos</item>
+        <item name="android:actionBarItemBackground">@color/textopreenchido</item>
+        <item name="colorAccent">@color/textos</item>
+        <!--<item name="android:background">#ffffff</item>-->
+        <!--<item name="android:textColorPrimary">@color/textopreenchido</item>-->
+    </style>
+
+    <style name="botao_ccr">
+        <item name="android:background">@drawable/botaobranco</item>
+        <item name="android:textColor">@color/textopreenchido</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:state_pressed">@drawable/botaocinza</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+</resources>

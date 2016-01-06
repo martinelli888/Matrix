@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="alturaDoTexto1">14dp</dimen>
+    <dimen name="alturaDoTexto2a">12dp</dimen>
+    <dimen name="alturaDoTexto2">14dp</dimen>
+    <dimen name="alturaDoTexto3">18dp</dimen>
+    <dimen name="alturaDoTitulo">25dp</dimen>
+    <dimen name="bordaMinima">15dp</dimen>
+    <dimen name="bordaMaxima">135dp</dimen>
+    <dimen name="bordaRelatorio">14dp</dimen>
+    <dimen name="espacoEntreLinhas">6dp</dimen>
+    <dimen name="alturaDoTextomin">10dp</dimen>
+
+</resources>

@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">MSVIA Restauração</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Opções</string>
+    <string name="vazio"> vazio </string>
+    <string name="porta">Gerenciamento de Restauração</string>
+    <string name="porta2">MSVIA - 2015</string>
+    <string name="produzido">Cleber Martinelli</string>
+    <!--//tela 01-->
+    <string name="texto001">Empresa:</string>
+    <string name="texto002">Projeto:</string>
+    <string name="texto003">Data:</string>
+    <string name="texto004">Turno:</string>
+    <string name="texto005">Clima:</string>
+    <string name="texto006">Responsável:</string>
+    <string name="texto007">Analista:</string>
+    <string name="texto008">Escolha o Novo Serviço</string>
+    <string name="texto009">MICRO-FRESAGEM (M2)</string>
+    <string name="texto009a">MICRO-REVESTIMENTO (M2)</string>
+    <string name="texto010">FRESAGEM (M3)</string>
+    <string name="texto011">CBUQ RECOMPOSIÇÃO (t)</string>
+    <string name="texto012">CBUQ REFORÇO (t)</string>
+    <string name="texto013">PMQ Acostamento (t)</string>
+    <string name="texto014">SELAGEM DE TRINCA</string>
+    <string name="texto015">RECICLAGEM</string>
+    <string name="texto016">DRENAGEM</string>
+    <string name="texto017">Rodovia Duplicada:</string>
+    <string name="texto017a">Sim</string>
+    <string name="texto017b">Não</string>
+    <string name="texto018">Pista:</string>
+    <string name="texto018a">Duplicada</string>
+    <string name="texto018b">Existente</string>
+    <string name="texto019">Sentido:</string>
+    <string name="texto019a">Norte</string>
+    <string name="texto019b">Sul</string>
+    <string name="texto020">KM Inicial:</string>
+    <string name="texto021">KM Final:</string>
+    <string name="texto022">Canteiro Central</string>
+    <string name="texto023">Acost.1</string>
+    <string name="texto024">Faixa 1</string>
+    <string name="texto025">Faixa 2</string>
+    <string name="texto026">Acost.2</string>
+    <string name="texto027">Faixa:</string>
+    <string name="texto028">Limpar:</string>
+    <string name="texto029">Salvar:</string>
+    <string name="texto030">Densidade:</string>
+    <string name="texto031">Metro Linear:</string>
+    <string name="texto032">Unidades:</string>
+    <string name="texto033">Comprimento:</string>
+    <string name="texto034">Largura:</string>
+    <string name="texto035">Espessura:</string>
+    <string name="texto036">Profundidade:</string>
+    <string name="texto037">Bom</string>
+    <string name="texto038">Instável</string>
+    <string name="texto039">Chuva</string>
+    <string name="texto040">manhã</string>
+    <string name="texto041">Tarde</string>
+    <string name="texto042">Armazenados</string>
+    <string name="texto043">Nova Atividade</string>
+    <string name="texto044">Enviar</string>
+    <string name="texto046">Enviar</string>
+    <string name="texto047">Gerar</string>
+    <string name="texto047a">Salvar e Enviar</string>
+    <string name="texto048">Voltar</string>
+    <string name="texto049">Conforme:</string>
+    <string name="texto050">Conforme Projeto</string>
+    <string name="texto051">Modif. de Projeto</string>
+    <string name="texto051a">Modificativo de Projeto</string>
+    <string name="texto052">Emergência\nSem Projeto</string>
+    <string name="texto053">Faixa</string>
+    <string name="texto054">Resumo de Medidas</string>
+    <string name="texto055">Resumo de Serviços</string>
+    <string name="texto056">Resumo de Insumos</string>
+    <string name="texto057"> - </string>
+    <string name="texto058">Area</string>
+    <string name="texto059">Volume</string>
+    <string name="texto060">Peso</string>
+
+    <string name="texto009b">Micro-Fresag.(m2)</string>
+    <string name="texto009bb">Micro-Revest.(m2)</string>
+    <string name="texto010b">Fresagem (m3)</string>
+    <string name="texto011b">CBUQ Recomp.(t)</string>
+    <string name="texto012b">CBUQ Reforço(t)</string>
+    <string name="texto013b">PMQ Acost.(t)</string>
+    <string name="texto014b">Selagem Trinca(m)</string>
+    <string name="texto015b">Reciclagem(m3)</string>
+    <string name="texto016b">Drenagem</string>
+
+    <string name="texto071">TSS</string>
+    <string name="texto072">Impermeabilização</string>
+    <string name="texto073">Sela Trinca</string>
+    <string name="texto074">CAP (Pista)</string>
+    <string name="texto075">CAP (Acost)</string>
+    <string name="texto076">Emulpen</string>
+    <string name="texto077">RR2C</string>
+    <string name="texto078">RC1-CE</string>
+    <string name="texto079">Sela-Trinca</string>
+    <string name="texto080">Cimento</string>
+    <string name="texto020b">Observações:</string>
+
+
+
+
+
+    <string name="title_activity_compre"> PENSE SOBRE ISSO!</string>
+
+
+    <string name="texto099"> Quanto vale clicar num botão e gerar um relatório instantâneo para sua gerência, ajudando vc a controlar sua obra de maneira rápida e confiável.</string>
+    <string name="texto098"> PENSE SOBRE ISSO!</string>
+        <string name="title_activity_servicos">Servicos</string>
+        <string name="title_activity_servicos2">Servicos2</string>
+        <string name="title_activity_alfa">AlfaActivity</string>
+        <string name="title_activity_porta">porta</string><!-- tela 02- mecanismo-->
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="textos">#dd1521</color>
+    <color name="textopreenchido">#4f4a45</color>
+    <color name="textohint">#dac3b3</color>
+
+</resources>
