@@ -393,6 +393,7 @@
         android:layout_marginLeft="150dp"
         android:layout_alignBaseline="@id/texto123"
         android:layout_toEndOf="@id/texto121"
+        android:text="0.05"
         android:hint="0.05 (m)"
         android:textColor="@color/textopreenchido"
         android:textSize="@dimen/alturaDoTexto2"

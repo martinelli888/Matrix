@@ -17,6 +17,7 @@ import com.msvia.matrix.Model.Trecho;
 import com.msvia.matrix.R;
 
 import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import butterknife.Bind;
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
+
+
+
+
 
     //recolhe a resposta da Turno
     public String respostaGrupoTurno() {
@@ -99,6 +104,13 @@ public class MainActivity extends AppCompatActivity {
        vaipraservicos.putExtra(Constants.CAMINHAODOFEDEX, getTrechoNovo());
         startActivity(vaipraservicos);
     }
+
+
+
+
+
+
+
 
     //cria um objeto trecho e seta
     public Trecho getTrechoNovo() {

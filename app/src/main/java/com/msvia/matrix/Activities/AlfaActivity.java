@@ -10,6 +10,9 @@ import com.msvia.matrix.Constants;
 import com.msvia.matrix.Model.Trecho;
 import com.msvia.matrix.R;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -313,9 +316,11 @@ public class AlfaActivity extends AppCompatActivity {
                     else {
                         mostraRR2C.setText("erro no RR2C");
                     }
-                    if (trecho.getMat_R1CE() != null)
-                        mostraRC1CE.setText(String.valueOf(trecho.getMat_R1CE()));
-                    else {
+                    if (trecho.getMat_R1CE() != null) {
+                        BigDecimal R1CE = new BigDecimal(trecho.getMat_R1CE())
+                                .setScale(2, RoundingMode.HALF_DOWN);
+                        mostraRC1CE.setText(String.valueOf(R1CE));
+                    }else {
                         mostraRC1CE.setText("erro no RC1CE");
                     }
                     if (trecho.getMat_SelaTrinca() != null)
@@ -355,7 +360,7 @@ public class AlfaActivity extends AppCompatActivity {
         String servicos1=trechoPronto.getFresagem().toString();
         String servicos2=trechoPronto.getCbuqFresagem().toString();
         String area=trechoPronto.getArea().toString();
-        String concatenado = "FRESAGEM no km: " + onde + "+" + onde2 + "," + " área:" + area + "m2, fresagem:" + servicos1 + "m3 e" + servicos2 + " de CBUQ, " + empresa + " #CM#";
+        String concatenado = empresa +" - FRESAGEM no km: " + onde + "+" + onde2 + ", Área:" + area + "m2, fresagem:" + servicos1 + "m3 e " + servicos2 + " ton. de CBUQ, "  + " #CM#";
 
 
         Intent smsIntent = new Intent(Intent.ACTION_VIEW);

@@ -344,7 +344,7 @@
                     android:layout_alignBaseline="@id/texto020r"
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/texto019r"
-                    android:layout_marginRight="12dp"
+                    android:layout_marginRight="6dp"
                     android:layout_marginTop="@dimen/espacoEntreLinhas"
                     android:text="@string/vazio"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -356,7 +356,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/texto019r"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginTop="@dimen/espacoEntreLinhas"
                     android:layout_toLeftOf="@id/retesf"
                     android:text="+"
@@ -369,7 +369,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/texto020r"
                     android:layout_below="@id/texto019r"
-                    android:layout_marginLeft="12dp"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginTop="@dimen/espacoEntreLinhas"
                     android:layout_toLeftOf="@id/mais2"
                     android:text="@string/vazio"
@@ -1134,7 +1134,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/texto048"
-                    android:layout_marginLeft="31dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_alignParentLeft="true"/>
                 <Button
                     android:id="@+id/BotaoSalvar3"
@@ -1142,14 +1142,14 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/texto080"
-                    android:layout_marginRight="31dp"
+                    android:layout_marginRight="16dp"
                     android:layout_alignParentRight="true"
                     android:text="@string/texto047a"
                     android:elevation="@dimen/alturaDoTexto1"
                     android:longClickable="false" />
             </RelativeLayout>
         </LinearLayout>
-    </ScrollView>
+</ScrollView>
 //botoes
 
     //logo e creditos
